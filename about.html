@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="{{theme_color}}">
+  <meta name="msapplication-navbutton-color" content="{{theme_color}}">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+
+  <title>{{hospital_name}} | {{nav_1_name}}</title>
+  <meta name="application-name" content="{{hospital_name}}">
+  <meta name="msapplication-tooltip" content="{{hospital_name}}">
+  <meta name="author" content="{{hospital_name}}">
+  <meta name="title" content="{{hospital_name}} | {{nav_1_name}}">
+  <meta name="description" content="{{hospital_name}} 병원소개 - 스포츠재활센터, 수술센터, 비수술센터 운영">
+  <meta name="keywords" content="{{meta_keywords}}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{site_url}}about.html">
+  <meta property="og:title" content="{{hospital_name}} | {{nav_1_name}}">
+  <meta property="og:description" content="{{hospital_name}} 병원소개 - 스포츠재활센터, 수술센터, 비수술센터 운영">
+  <meta property="og:site_name" content="{{hospital_name}}">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:image" content="{{site_url}}assets/og.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{hospital_name}} | {{nav_1_name}}">
+  <meta name="twitter:description" content="{{hospital_name}} 병원소개 - 스포츠재활센터, 수술센터, 비수술센터 운영">
+
+  <!-- Schema.org -->
+  <meta itemprop="name" content="{{hospital_name}} | {{nav_1_name}}">
+  <meta itemprop="description" content="{{hospital_name}} 병원소개 - 스포츠재활센터, 수술센터, 비수술센터 운영">
+  <meta itemprop="keywords" content="{{meta_keywords}}">
+
+  <!-- Nate -->
+  <meta name="nate:title" content="{{hospital_name}} | {{nav_1_name}}">
+  <meta name="nate:site_name" content="{{hospital_name}}">
+  <meta name="nate:description" content="{{hospital_name}} 병원소개 - 스포츠재활센터, 수술센터, 비수술센터 운영">
+  <meta name="nate:keywords" content="{{meta_keywords}}">
+
+  <!-- Favicon -->
+  <link rel="canonical" href="{{site_url}}about.html">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/favicon.webp">
+  <link rel="icon" type="image/png" href="assets/favicon.webp" sizes="196x196">
+  <meta name="msapplication-TileImage" content="assets/favicon.webp">
+  <meta name="msapplication-square310x310logo" content="assets/favicon.webp">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <script src="../../pages/buy.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header header--scrolled" id="doz_header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="" data-src="{{image_logo}}" alt="{{hospital_name}}" class="logo-img">
+        </a>
+      </div>
+      <nav class="header__nav">
+        <div class="header__nav-item header__nav-item--dropdown">
+          <a href="about.html" class="header__nav-link">{{nav_1_name}} <span class="dropdown-arrow">▾</span></a>
+          <ul class="header__dropdown">
+            <li><a href="about.html">{{nav_1_name}}</a></li>
+            <li><a href="about.html#doctors">의료진</a></li>
+            <li><a href="about.html#facilities">시설안내</a></li>
+          </ul>
+        </div>
+        <div class="header__nav-item">
+          <a href="joint.html" class="header__nav-link">{{nav_2_name}}</a>
+        </div>
+        <div class="header__nav-item">
+          <a href="spine.html" class="header__nav-link">{{nav_3_name}}</a>
+        </div>
+        <div class="header__nav-item">
+          <a href="sports.html" class="header__nav-link">{{nav_5_name}}</a>
+        </div>
+      </nav>
+      <button class="header__menu-toggle" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <ul class="mobile-nav__list">
+      <li class="mobile-nav__item mobile-nav__item--accordion">
+        <a href="#" class="mobile-nav__link mobile-nav__accordion-toggle">{{nav_1_name}} <span class="accordion-arrow">▾</span></a>
+        <ul class="mobile-nav__submenu">
+          <li><a href="about.html" class="mobile-nav__sublink">{{nav_1_name}}</a></li>
+          <li><a href="about.html#doctors" class="mobile-nav__sublink">의료진</a></li>
+          <li><a href="about.html#facilities" class="mobile-nav__sublink">시설안내</a></li>
+        </ul>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="joint.html" class="mobile-nav__link">{{nav_2_name}}</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="spine.html" class="mobile-nav__link">{{nav_3_name}}</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="sports.html" class="mobile-nav__link">{{nav_5_name}}</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Subpage Hero Banner -->
+  <section class="subpage-hero" style="" data-bg="{{image_about_hero}}">
+    <div class="subpage-hero__overlay"></div>
+    <div class="subpage-hero__content">
+      <h1 class="subpage-hero__title">{{nav_1_name}}</h1>
+      <p class="subpage-hero__breadcrumb">홈 > {{nav_1_name}}</p>
+    </div>
+  </section>
+
+  <!-- About Intro Section -->
+  <section class="section-block" id="intro">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__subtitle">About Us</p>
+        <h2 class="section-header__title">{{hospital_name}} 소개</h2>
+        <p class="section-header__desc">환자를 최우선으로 하는 전문 의료 서비스</p>
+      </div>
+      <div class="row">
+        <div class="col col-6">
+          <div class="fade-in">
+            <img src="" data-src="{{image_about_interior}}" alt="{{hospital_name}} 내부" class="rounded shadow">
+          </div>
+        </div>
+        <div class="col col-6">
+          <div class="fade-in" data-delay="200">
+            <h3>{{about_intro_heading}}</h3>
+            <p>{{about_intro_text_1}}</p>
+            <p>{{about_intro_text_2}}</p>
+            <ul class="about-features">
+              <li>스포츠재활센터 운영</li>
+              <li>수술센터 운영</li>
+              <li>비수술센터 운영</li>
+              <li>최신 의료 장비 구비</li>
+            </ul>
+            <a href="#doctors" class="btn btn--primary mt-3">의료진 보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Information Section -->
+  <section class="section-block section-block--gray" id="info">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__subtitle">Information</p>
+        <h2 class="section-header__title">병원정보 및 오시는 길</h2>
+      </div>
+      <div class="row">
+        <div class="col col-6">
+          <div class="info-box fade-in">
+            <h4>연락처 안내</h4>
+            <div class="info-item">
+              <strong>대표전화:</strong> {{phone}}
+            </div>
+            <div class="info-item">
+              <strong>수술예약:</strong> {{surgery_phone}}
+            </div>
+            <div class="info-item">
+              <strong>팩스:</strong> {{fax}}
+            </div>
+            <div class="info-item">
+              <strong>주소:</strong> {{address_full}}
+            </div>
+          </div>
+        </div>
+        <div class="col col-6">
+          <div class="info-box fade-in" data-delay="100">
+            <h4>진료시간 안내</h4>
+            <div class="hours-table">
+              <div class="hours-row">
+                <span class="hours-day">평일</span>
+                <span class="hours-time">09:00 - 18:00</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">토요일</span>
+                <span class="hours-time">09:00 - 13:00</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">점심시간</span>
+                <span class="hours-time">13:00 - 14:00</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">일요일/공휴일</span>
+                <span class="hours-time">휴진</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctor Section -->
+  <section class="section-block" id="doctors">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__subtitle">Medical Staff</p>
+        <h2 class="section-header__title">의료진 소개</h2>
+        <p class="section-header__desc">환자를 최우선으로 하는 {{hospital_name}}</p>
+      </div>
+      <div class="row">
+        <div class="col col-6">
+          <div class="doctor-card-horizontal fade-in">
+            <div class="doctor-card-horizontal__image">
+              <img src="" data-src="{{image_doctor_1}}" alt="{{doctor_1_name}}">
+            </div>
+            <div class="doctor-card-horizontal__content">
+              <h4 class="doctor-card-horizontal__name">{{doctor_1_name}}</h4>
+              <p class="doctor-card-horizontal__specialty">{{doctor_1_specialty}}</p>
+              <p class="doctor-card-horizontal__desc">{{doctor_1_desc}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-6">
+          <div class="doctor-card-horizontal fade-in" data-delay="100">
+            <div class="doctor-card-horizontal__image">
+              <img src="" data-src="{{image_doctor_2}}" alt="{{doctor_2_name}}">
+            </div>
+            <div class="doctor-card-horizontal__content">
+              <h4 class="doctor-card-horizontal__name">{{doctor_2_name}}</h4>
+              <p class="doctor-card-horizontal__specialty">{{doctor_2_specialty}}</p>
+              <p class="doctor-card-horizontal__desc">{{doctor_2_desc}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facility Section -->
+  <section class="section-block section-block--gray" id="facilities">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__subtitle">Facilities</p>
+        <h2 class="section-header__title">층별 안내</h2>
+        <p class="section-header__desc">병원정보를 안내해 드립니다</p>
+      </div>
+      <div class="row">
+        <div class="col col-6">
+          <div class="floor-card fade-in">
+            <div class="floor-card__header">
+              <span class="floor-card__number">4층</span>
+            </div>
+            <div class="floor-card__content">
+              <h4>주요 진료</h4>
+              <p>정형외과, 마취통증의학과, 재활의학과</p>
+              <h5>주요시설</h5>
+              <p>외래 진료실, 검사실, 물리치료실, 주사치료실</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-6">
+          <div class="floor-card fade-in" data-delay="100">
+            <div class="floor-card__header">
+              <span class="floor-card__number">5층</span>
+            </div>
+            <div class="floor-card__content">
+              <h4>수술 센터 & 스포츠 재활 센터</h4>
+              <p>수술이나 집중 치료가 필요한 시설</p>
+              <h5>주요시설</h5>
+              <p>수술실 및 회복실, 입원실, 집중 재활치료실, 야외테라스</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section-block" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__subtitle">Gallery</p>
+        <h2 class="section-header__title">시설 갤러리</h2>
+      </div>
+      <div class="row gallery-row-2">
+        <div class="col col-6">
+          <div class="gallery-item fade-in">
+            <img src="" data-src="{{image_about_gallery_1}}" alt="진료실" class="rounded">
+            <p class="gallery-item__caption">진료실</p>
+          </div>
+        </div>
+        <div class="col col-6">
+          <div class="gallery-item fade-in" data-delay="100">
+            <img src="" data-src="{{image_about_gallery_2}}" alt="물리치료실" class="rounded">
+            <p class="gallery-item__caption">물리치료실</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-block section-block--brand">
+    <div class="container">
+      <div class="cta-content text-center">
+        <h2 class="cta-title">진료 예약 안내</h2>
+        <p class="cta-desc">전문의 상담을 통해 정확한 진단과 맞춤 치료를 받으세요</p>
+        <a href="tel:{{phone}}" class="btn btn--white btn--lg">전화 예약하기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <img src="" data-src="{{image_logo_white}}" alt="{{hospital_name}}">
+          </div>
+          <p class="footer__desc">
+            {{footer_desc}}
+          </p>
+          <div class="footer__social">
+            <a href="{{instagram_url}}" target="_blank" aria-label="Instagram">
+              <img src="" data-src="{{icon_instagram}}" alt="Instagram">
+            </a>
+            <a href="{{youtube_url}}" target="_blank" aria-label="YouTube">
+              <img src="" data-src="{{icon_youtube}}" alt="YouTube">
+            </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h5 class="footer__title">진료센터</h5>
+          <ul class="footer__list">
+            <li><a href="joint.html">{{nav_2_name}}</a></li>
+            <li><a href="spine.html">{{nav_3_name}}</a></li>
+            <li><a href="sports.html">{{nav_5_name}}</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5 class="footer__title">연락처</h5>
+          <div class="footer__contact-item">
+            <span>전화: {{phone}}</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>팩스: {{fax}}</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>이메일: {{email}}</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>{{address}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; {{copyright_year}} {{hospital_name}}. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Libraries -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="main.js"></script>
+</body>
+</html>
+

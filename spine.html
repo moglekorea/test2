@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="{{theme_color}}">
+  <meta name="msapplication-navbutton-color" content="{{theme_color}}">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+
+  <title>{{hospital_name}} | {{nav_3_name}}</title>
+  <meta name="application-name" content="{{hospital_name}}">
+  <meta name="msapplication-tooltip" content="{{hospital_name}}">
+  <meta name="author" content="{{hospital_name}}">
+  <meta name="title" content="{{hospital_name}} | {{nav_3_name}}">
+  <meta name="description" content="{{hospital_name}} 척추센터 - 거북목, 디스크, 협착증, 요통 전문 진료. 비수술적 치료를 통한 근본 원인 해결">
+  <meta name="keywords" content="{{meta_keywords}}, 척추센터, 거북목, 디스크, 협착증, 요통">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{site_url}}spine.html">
+  <meta property="og:title" content="{{hospital_name}} | {{nav_3_name}}">
+  <meta property="og:description" content="{{hospital_name}} 척추센터 - 거북목, 디스크, 협착증 전문 진료">
+  <meta property="og:site_name" content="{{hospital_name}}">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:image" content="{{site_url}}assets/og.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{hospital_name}} | {{nav_3_name}}">
+  <meta name="twitter:description" content="{{hospital_name}} 척추센터 - 거북목, 디스크, 협착증 전문 진료">
+
+  <!-- Schema.org -->
+  <meta itemprop="name" content="{{hospital_name}} | {{nav_3_name}}">
+  <meta itemprop="description" content="{{hospital_name}} 척추센터 - 거북목, 디스크, 협착증 전문 진료">
+  <meta itemprop="keywords" content="{{meta_keywords}}, 척추센터">
+
+  <!-- Nate -->
+  <meta name="nate:title" content="{{hospital_name}} | {{nav_3_name}}">
+  <meta name="nate:site_name" content="{{hospital_name}}">
+  <meta name="nate:description" content="{{hospital_name}} 척추센터 - 거북목, 디스크, 협착증 전문 진료">
+  <meta name="nate:keywords" content="{{meta_keywords}}, 척추센터">
+
+  <!-- Favicon -->
+  <link rel="canonical" href="{{site_url}}spine.html">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/favicon.webp">
+  <link rel="icon" type="image/png" href="assets/favicon.webp" sizes="196x196">
+  <meta name="msapplication-TileImage" content="assets/favicon.webp">
+  <meta name="msapplication-square310x310logo" content="assets/favicon.webp">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <script src="../../pages/buy.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header header--scrolled" id="doz_header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="" data-src="{{image_logo}}" alt="{{hospital_name}}" class="logo-img">
+        </a>
+      </div>
+      <nav class="header__nav">
+        <div class="header__nav-item header__nav-item--dropdown">
+          <a href="about.html" class="header__nav-link">{{nav_1_name}} <span class="dropdown-arrow">▾</span></a>
+          <ul class="header__dropdown">
+            <li><a href="about.html">{{nav_1_name}}</a></li>
+            <li><a href="about.html#doctors">의료진</a></li>
+            <li><a href="about.html#facilities">시설안내</a></li>
+          </ul>
+        </div>
+        <div class="header__nav-item">
+          <a href="joint.html" class="header__nav-link">{{nav_2_name}}</a>
+        </div>
+        <div class="header__nav-item">
+          <a href="spine.html" class="header__nav-link">{{nav_3_name}}</a>
+        </div>
+        <div class="header__nav-item">
+          <a href="sports.html" class="header__nav-link">{{nav_5_name}}</a>
+        </div>
+      </nav>
+      <button class="header__menu-toggle" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <ul class="mobile-nav__list">
+      <li class="mobile-nav__item mobile-nav__item--accordion">
+        <a href="#" class="mobile-nav__link mobile-nav__accordion-toggle">{{nav_1_name}} <span class="accordion-arrow">▾</span></a>
+        <ul class="mobile-nav__submenu">
+          <li><a href="about.html" class="mobile-nav__sublink">{{nav_1_name}}</a></li>
+          <li><a href="about.html#doctors" class="mobile-nav__sublink">의료진</a></li>
+          <li><a href="about.html#facilities" class="mobile-nav__sublink">시설안내</a></li>
+        </ul>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="joint.html" class="mobile-nav__link">{{nav_2_name}}</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="spine.html" class="mobile-nav__link">{{nav_3_name}}</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="sports.html" class="mobile-nav__link">{{nav_5_name}}</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Subpage Hero Banner -->
+  <section class="subpage-hero" style="" data-bg="{{image_spine_hero}}">
+    <div class="subpage-hero__overlay"></div>
+    <div class="subpage-hero__content">
+      <h1 class="subpage-hero__title">{{nav_3_name}}</h1>
+      <p class="subpage-hero__breadcrumb">홈 > {{nav_3_name}}</p>
+    </div>
+  </section>
+
+  <!-- Center Intro -->
+  <section class="section-block">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__subtitle">Spine Center</p>
+        <h2 class="section-header__title">척추 질환 전문 진료</h2>
+        <p class="section-header__desc">목과 허리 척추 질환을 전문적으로 치료합니다</p>
+      </div>
+      <div class="row">
+        <div class="col col-6">
+          <div class="fade-in">
+            <img src="" data-src="{{image_spine_intro}}" alt="{{nav_3_name}}" class="rounded shadow">
+          </div>
+        </div>
+        <div class="col col-6">
+          <div class="fade-in" data-delay="200">
+            <h3>비수술적 치료로 근본 원인 해결</h3>
+            <p>척추센터에서는 거북목, 디스크, 협착증 등 다양한 척추 질환에 대해 정확한 진단과 비수술적 치료를 우선합니다.</p>
+            <p>도수치료, 운동치료, 신경차단술 등을 통해 통증의 근본 원인을 해결하고, 필요한 경우 수술적 치료도 제공합니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Disease Cards - Neck -->
+  <section class="section-block section-block--gray" id="neck">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__subtitle">Neck</p>
+        <h2 class="section-header__title">목 질환</h2>
+      </div>
+      <div class="row">
+        <div class="col col-6">
+          <div class="disease-card disease-card--horizontal fade-in">
+            <div class="disease-card__icon">
+              <img src="" data-src="{{image_spine_turtle}}" alt="거북목">
+            </div>
+            <div class="disease-card__body">
+              <h4 class="disease-card__title">거북목 증후군</h4>
+              <p class="disease-card__desc">목의 C자형 곡선이 무너지고 목이 앞으로 빠지면서 만성적인 통증과 두통을 유발하는 자세 문제입니다. 바른 자세 교정과 함께 도수·운동 치료를 통해 근본적인 원인을 해결해야 합니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-6">
+          <div class="disease-card disease-card--horizontal fade-in" data-delay="100">
+            <div class="disease-card__icon">
+              <img src="" data-src="{{image_dept_3}}" alt="목디스크">
+            </div>
+            <div class="disease-card__body">
+              <h4 class="disease-card__title">목 디스크 (경추 추간판 탈출증)</h4>
+              <p class="disease-card__desc">경추의 디스크가 탈출하여 신경을 압박, 목과 어깨, 팔의 통증과 저림을 유발합니다. 비수술적 치료로 대부분 호전될 수 있습니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Disease Cards - Lower Back (reduced from 3 to 2 cards) -->
+  <section class="section-block" id="lumbar">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__subtitle">Lumbar</p>
+        <h2 class="section-header__title">허리 질환</h2>
+      </div>
+      <div class="row">
+        <div class="col col-6">
+          <div class="disease-card fade-in">
+            <div class="disease-card__icon">
+              <img src="" data-src="{{image_spine_stenosis}}" alt="협착증">
+            </div>
+            <h4 class="disease-card__title">척추관 협착증</h4>
+            <p class="disease-card__desc">척추관이 좁아져 신경이 압박되어 걸을 때 다리가 저리고 아픈 증상이 나타납니다.</p>
+          </div>
+        </div>
+        <div class="col col-6">
+          <div class="disease-card fade-in" data-delay="100">
+            <div class="disease-card__icon">
+              <img src="" data-src="{{image_spine_disc}}" alt="허리디스크">
+            </div>
+            <h4 class="disease-card__title">허리 디스크</h4>
+            <p class="disease-card__desc">요추의 디스크가 탈출하여 신경을 압박, 허리와 다리의 통증 및 저림을 유발합니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Treatment Methods (consolidated from 4 to 2 cards) -->
+  <section class="section-block section-block--gray" id="treatment">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__subtitle">Treatment</p>
+        <h2 class="section-header__title">치료 방법</h2>
+        <p class="section-header__desc">환자를 최우선으로 치료합니다</p>
+      </div>
+      <div class="row">
+        <div class="col col-6">
+          <div class="treatment-card fade-in">
+            <div class="treatment-card__image">
+              <img src="" data-src="{{image_treatment_rehab}}" alt="재활치료">
+            </div>
+            <div class="treatment-card__content">
+              <h4 class="treatment-card__title">물리·도수·운동치료</h4>
+              <p class="treatment-card__desc">전문 치료사가 손으로 직접 척추와 근육을 교정하고, 맞춤형 운동 프로그램으로 근력을 강화하여 재발을 예방합니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-6">
+          <div class="treatment-card fade-in" data-delay="100">
+            <div class="treatment-card__image">
+              <img src="" data-src="{{image_treatment_injection}}" alt="신경차단술">
+            </div>
+            <div class="treatment-card__content">
+              <h4 class="treatment-card__title">신경차단술</h4>
+              <p class="treatment-card__desc">통증 유발 부위에 정밀 주사하여 신경 염증을 가라앉힙니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-block section-block--brand">
+    <div class="container">
+      <div class="cta-content text-center">
+        <h2 class="cta-title">목, 허리 통증으로 고민이신가요?</h2>
+        <p class="cta-desc">전문의 상담을 통해 정확한 진단과 맞춤 치료를 받으세요</p>
+        <a href="tel:{{phone}}" class="btn btn--white btn--lg">전화 상담하기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <img src="" data-src="{{image_logo_white}}" alt="{{hospital_name}}">
+          </div>
+          <p class="footer__desc">
+            {{footer_desc}}
+          </p>
+          <div class="footer__social">
+            <a href="{{instagram_url}}" target="_blank" aria-label="Instagram">
+              <img src="" data-src="{{icon_instagram}}" alt="Instagram">
+            </a>
+            <a href="{{youtube_url}}" target="_blank" aria-label="YouTube">
+              <img src="" data-src="{{icon_youtube}}" alt="YouTube">
+            </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h5 class="footer__title">진료센터</h5>
+          <ul class="footer__list">
+            <li><a href="joint.html">{{nav_2_name}}</a></li>
+            <li><a href="spine.html">{{nav_3_name}}</a></li>
+            <li><a href="sports.html">{{nav_5_name}}</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5 class="footer__title">연락처</h5>
+          <div class="footer__contact-item">
+            <span>전화: {{phone}}</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>팩스: {{fax}}</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>이메일: {{email}}</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>{{address}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; {{copyright_year}} {{hospital_name}}. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Libraries -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="main.js"></script>
+</body>
+</html>
+
